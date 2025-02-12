@@ -19,10 +19,10 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 2. Install Python stuff you need:
    ```bash
-   uv  install pandas pyyaml openpyxl
+   uv  sync
    ```
 
-3. Create a config file called `config.yaml` that tells the script where your Excel files are. Here's an example:
+3. Update a config file (see `config.yaml`) that tells the script where your Excel files are. Here's an example:
    ```yaml
    output_dir: "my_output_folder"
    files:
