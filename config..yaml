@@ -1,0 +1,25 @@
+# ----------------------------------------------------------------
+# Directory where the final output CSVs will be stored
+# ----------------------------------------------------------------
+output_dir: "test_output"
+
+# ----------------------------------------------------------------
+# List of input files, plus the sheets in each file, 
+# and which format type they belong to.
+#
+# You can add as many file entries as you like.
+# For each file, list the "sheets" you want processed.
+# Each sheet references:
+#   - name   : The sheet's name or index
+#   - format : "Coke" | "Alibaba" | "Pepsi"
+# ----------------------------------------------------------------
+files:
+  - path: "input_test/sample.xlsx"
+    sheets:
+      - name: "sample 1"
+        format: "Coke"
+      - name: "sample 2"
+        format: "Alibaba"
+      - name: "sample 3"
+        format: "Pepsi"
+
